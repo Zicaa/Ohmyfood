@@ -1,0 +1,37 @@
+@import "../utils/variables.scss";
+
+/**************************************************************************************************************************************/
+/*************************************************************button********************************************************************/
+/**************************************************************************************************************************************/
+
+button {
+    display: inline-block;
+    background: linear-gradient($secondary-color, $primary-color);
+    border: none;
+    border-radius: 50px;
+    color: $white;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 $lightgrey;
+    transition: 0.3s;
+    &:hover {
+      display: inline-block;
+      background: linear-gradient($secondary-light, $primary-light);
+      border: none;
+      border-radius: 50px;
+      color: $white;
+      text-align: center;
+      font-size: 18px;
+      padding: 20px;
+      cursor: pointer;
+      margin: 20px;
+      box-shadow: 0 4px 8px 0 $darkgrey;
+      transition: 0.3s;
+    }
+  }
+  
+ 
+  

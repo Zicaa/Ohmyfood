@@ -1,0 +1,224 @@
+@import "../scss/base/base.scss";
+@import "../scss/layouts/header.scss";
+@import "../scss/layouts/footer.scss";
+@import "../scss/components/button.scss";
+@import"../scss/components/searchbar.scss";
+@import "../scss/components/heart.scss";
+@import "../scss/utils/loader.scss";
+@import "../scss/utils/variables.scss";
+
+/**************************************************************************************************************************************/
+/*************************************************************titles********************************************************************/
+/**************************************************************************************************************************************/
+
+.titles{
+  display :flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  background-color: $bg-card;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 300;
+  padding: 10px;
+  &.strong{
+    font-weight: 700;
+  }
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: 300;
+	text-align: left;
+}
+
+h4{
+  font-weight: 700;
+  font-size: 20px;
+  width: 60%;
+}
+@media screen and (min-width: 320px) {
+  .h4 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+h5{
+  font-weight: 300;
+  font-size: 18px;
+  width: 100%;
+}
+
+
+/**************************************************************************************************************************************/
+/*************************************************************filters********************************************************************/
+/**************************************************************************************************************************************/
+
+article.filters{
+	display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  article.filters {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.cercle {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-left: -2.2em;
+  text-align: center;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #9356DC;
+  color: #FFFFFF;
+  padding: 5px;
+}
+@media screen and (min-width: 992px) {
+  .cercle {
+    margin-left: -2.5em;
+    padding: 10px;
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5em;
+  & i{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 18px;
+    color: $favicon-filter-color;
+    padding: 10px;
+  }
+}
+
+.filter {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: $bg-card;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  height: 60px;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 $lightgrey;
+  transition: 0.3s;
+    &:hover {
+      background: $bag-card-hover;
+      cursor: pointer;
+      &:hover i {
+        color: $primary-color;
+      }
+    }
+	}
+  @media screen and (min-width: 768px) {
+    article.filter {
+      width: 30%;
+	    height: 80px;
+    }
+  }
+
+/**************************************************************************************************************************************/
+/*************************************************************menu cards********************************************************************/
+/**************************************************************************************************************************************/
+
+#restaurants{
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-card;
+  padding: 3em 1.5em;
+}
+@media screen and (min-width: 768px) {
+  #restaurants {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    margin: 1.5em 0em 3em;
+}
+}
+
+a.menu__link {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+}
+@media screen and (min-width: 768px) {
+  a.menu__link {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%;
+  }
+}
+
+.new {
+  position: absolute;
+  margin-left: -7.4em;
+  margin-top: 1em;
+  background-color: $tertiary-color;
+  border: none;
+  color: $new-color;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.card-restau{
+  z-index: 1;
+	background: $white;
+	border-radius: 20px;
+	width: 100%;
+	font-weight: 500;
+	font-size: 16px;
+	box-shadow: 0 4px 8px 0 $lightgrey;
+  transition: 0.3s;
+    &__img{
+      z-index: 1;
+      background-size: cover;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      border-radius: 20px 20px 0px 0px;
+      width: 100%;
+      height: 150px;
+      }
+      &__text {
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 20px 20px 20px;
+      }
+        &:hover {
+          background: $bag-card-hover;
+        }
+  }
+
+
+

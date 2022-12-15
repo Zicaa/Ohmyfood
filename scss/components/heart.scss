@@ -1,0 +1,39 @@
+/**************************************************************************************************************************************/
+/*************************************************************heart hover********************************************************************/
+/**************************************************************************************************************************************/
+
+span.fa-stack{
+  height: 0em;
+}
+
+.fa-stack {
+    font-size: 28px;
+    position: relative;
+    cursor: pointer;
+    height: 1em;
+    bottom: 10px;
+    opacity: 1;
+  }
+  
+  .fa-stack :nth-child(2) {
+    font-size: 30px;
+    color: transparent;
+    opacity: 1;
+    &:nth-child(2):hover {
+      opacity: 0;
+      background-image: linear-gradient($secondary-color, $primary-color);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: remplissage 500ms linear forwards;
+    }
+  }
+
+/* heart animation*/
+
+@keyframes remplissage {
+  to {
+    opacity: 1;
+    transform-origin: bottom;
+  }
+}

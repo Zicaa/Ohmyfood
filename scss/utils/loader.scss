@@ -2,6 +2,8 @@
 /*************************************************************loader********************************************************************/
 /**************************************************************************************************************************************/
 
+/* Initialisation du loader qui prend toute la page et disparaît*/
+
 .loader{
   position:fixed;
   background-color: $white;
@@ -17,6 +19,9 @@
   animation-delay: 1s;
   animation-fill-mode: forwards;
   transform-origin: top;
+
+  /* Création du cercle qui tourne sur lui-même*/
+
   &_cercle{
     border-top: 10px solid $new-color;
     border-bottom: 10px solid $secondary-color;

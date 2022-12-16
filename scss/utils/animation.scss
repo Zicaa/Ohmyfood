@@ -3,10 +3,12 @@
 /**************************************************************************************************************************************/
 
 /* slider sur les choix de menu*/
+
 .proposition__1 {
   animation-name: sliders;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
+  /*animation-fill-mode : backwards conserve les propriétés de l'élements avant l'execution de l'anim*/
 }
 @keyframes sliders {
   from {
@@ -77,38 +79,6 @@
 }
 
 /* encoche verte qui apparaît au hover*/
-.filter__check {
-  width: 0%;
-  color: transparent;
-  font-size: xx-large;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  height: 110px;
-  border-top-right-radius: 20px 20px;
-  border-bottom-right-radius: 20px 20px;
-  cursor: pointer;
-  transition: all 800ms;
-  display: flex;
-}
-.filter:hover > .filter__check {
-  width:30%;
-  background-color: $tertiary-color;
-  cursor: pointer;
-  color: $bg-card;
-  display: flex;
-}
-.filter:hover > .filter__text{
-  width:70%;
-}
-.filter:hover .fa-check-circle {
-  transform: rotate(365deg);
-}
-
-.fa-check-circle {
-  transition: transform 800ms;
-}
-
 .filter__text {
   display: flex;
   width: 100%;
@@ -134,5 +104,43 @@
       height: 41px;
     }
   }
+  
+.filter__check {
+  width: 0%;
+  color: transparent;
+  font-size: xx-large;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
+  border-top-right-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  transition: all 800ms;
+  display: flex;
+}
+
+.filter:hover{
+  cursor: pointer;
+}
+
+/* la div filter check se déploit de 30% au survol de la div filter*/
+.filter:hover > .filter__check {
+  width:30%;
+  background-color: $tertiary-color;
+  color: $bg-card;
+  display: flex;
+}
+.filter:hover > .filter__text{
+  width:70%;
+}
+/*l'icône check-circle effectue une rotation de 365° au hover*/ 
+.filter:hover .fa-check-circle {
+  transform: rotate(365deg);
+}
+
+.fa-check-circle {
+  transition: transform 800ms;
+}
+
 
 

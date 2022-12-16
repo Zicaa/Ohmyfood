@@ -2,29 +2,35 @@
 /*************************************************************heart hover********************************************************************/
 /**************************************************************************************************************************************/
 
+/* far:icône vide, fas:icône pleine*/
+
 span.fa-stack{
   height: 0em;
 }
 
+/* sélection du premier coeur*/
 .fa-stack {
-    font-size: 28px;
-    position: relative;
-    cursor: pointer;
-    height: 1em;
-    bottom: 10px;
-    opacity: 1;
-  }
+  cursor: pointer;
+  font-size: 28px;
+  position: relative;
+  height: 1em;
+  bottom: 10px;
+  opacity: 1;
+}
   
+  /* sélection du second coeur*/
   .fa-stack :nth-child(2) {
     font-size: 30px;
     color: transparent;
     opacity: 1;
+    /* application de l'animation au hover*/
     &:nth-child(2):hover {
       opacity: 0;
       background-image: linear-gradient($secondary-color, $primary-color);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
+      /* forwards conserve les propriétés de l'élements après l'execution de l'anim*/
       animation: remplissage 500ms linear forwards;
     }
   }

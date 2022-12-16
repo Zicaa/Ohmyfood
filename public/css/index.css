@@ -176,23 +176,27 @@ input#textarea {
 /**************************************************************************************************************************************/
 /*************************************************************heart hover********************************************************************/
 /**************************************************************************************************************************************/
+/* far:icône vide, fas:icône pleine*/
 span.fa-stack {
   height: 0em;
 }
 
+/* sélection du premier coeur*/
 .fa-stack {
+  cursor: pointer;
   font-size: 28px;
   position: relative;
-  cursor: pointer;
   height: 1em;
   bottom: 10px;
   opacity: 1;
 }
 
+/* sélection du second coeur*/
 .fa-stack :nth-child(2) {
   font-size: 30px;
   color: transparent;
   opacity: 1;
+  /* application de l'animation au hover*/
 }
 .fa-stack :nth-child(2):nth-child(2):hover {
   opacity: 0;
@@ -200,6 +204,7 @@ span.fa-stack {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  /* forwards conserve les propriétés de l'élements après l'execution de l'anim*/
   animation: remplissage 500ms linear forwards;
 }
 
@@ -213,6 +218,7 @@ span.fa-stack {
 /**************************************************************************************************************************************/
 /*************************************************************loader********************************************************************/
 /**************************************************************************************************************************************/
+/* Initialisation du loader qui prend toute la page et disparaît*/
 .loader {
   position: fixed;
   background-color: #FFFFFF;
@@ -228,6 +234,7 @@ span.fa-stack {
   animation-delay: 1s;
   animation-fill-mode: forwards;
   transform-origin: top;
+  /* Création du cercle qui tourne sur lui-même*/
 }
 .loader_cercle {
   border-top: 10px solid #008766;

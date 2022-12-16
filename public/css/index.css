@@ -218,7 +218,7 @@ span.fa-stack {
 /**************************************************************************************************************************************/
 /*************************************************************loader********************************************************************/
 /**************************************************************************************************************************************/
-/* Initialisation du loader qui prend toute la page et disparaît*/
+/* initialisation du loader qui prend toute la page et disparaît*/
 .loader {
   position: fixed;
   background-color: #FFFFFF;
@@ -234,7 +234,7 @@ span.fa-stack {
   animation-delay: 1s;
   animation-fill-mode: forwards;
   transform-origin: top;
-  /* Création du cercle qui tourne sur lui-même*/
+  /* création du cercle qui tourne sur lui-même*/
 }
 .loader_cercle {
   border-top: 10px solid #008766;
@@ -254,7 +254,7 @@ span.fa-stack {
   animation: turn 1s linear infinite;
 }
 
-/* Animation du loader qui disparaît comme une slide*/
+/* animation du loader qui disparaît comme une slide*/
 @keyframes disappear {
   from {
     transform: translateY(0px);
@@ -265,7 +265,7 @@ span.fa-stack {
     transform: translateY(-100vh);
   }
 }
-/* Animation du cercle coloré qui tourne sur lui-même*/
+/* animation du cercle coloré qui tourne sur lui-même*/
 @keyframes turn {
   0% {
     transform: rotate(0deg);

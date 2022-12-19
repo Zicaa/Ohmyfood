@@ -4,6 +4,7 @@
 @import "../components/button.scss";
 @import "../components/heart.scss";
 @import "../utils/animation.scss";
+@import "../utils/typographies.scss";
 
 /**************************************************************************************************************************************/
 /*************************************************************titles********************************************************************/
@@ -20,9 +21,8 @@ main{
 }
 
 h1 {
-  font-family: ultra;
-  font-style: italic;
-  font-size: 18px;
+  font-family: Shrikhand;
+  font-size: 22px;
   font-weight: 700;
   padding: 10px;
   width: 60%;

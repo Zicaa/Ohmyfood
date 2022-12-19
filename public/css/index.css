@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* Base */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -179,6 +181,7 @@ input#textarea {
 /* far:icône vide, fas:icône pleine*/
 span.fa-stack {
   height: 0em;
+  margin-top: 10px;
 }
 
 /* sélection du premier coeur*/

@@ -178,19 +178,14 @@ input#textarea {
 /**************************************************************************************************************************************/
 /*************************************************************heart hover********************************************************************/
 /**************************************************************************************************************************************/
-/* far:icône vide, fas:icône pleine*/
 span.fa-stack {
-  height: 0em;
-  margin-top: 10px;
+  height: auto;
 }
 
 /* sélection du premier coeur*/
 .fa-stack {
   cursor: pointer;
   font-size: 28px;
-  position: relative;
-  height: 1em;
-  bottom: 10px;
   opacity: 1;
 }
 
@@ -198,7 +193,6 @@ span.fa-stack {
 .fa-stack :nth-child(2) {
   font-size: 30px;
   color: transparent;
-  opacity: 1;
   /* application de l'animation au hover*/
 }
 .fa-stack :nth-child(2):nth-child(2):hover {
@@ -206,8 +200,6 @@ span.fa-stack {
   background-image: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
-  /* forwards conserve les propriétés de l'élements après l'execution de l'anim*/
   animation: remplissage 500ms linear forwards;
 }
 

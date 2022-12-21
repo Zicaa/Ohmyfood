@@ -2,7 +2,8 @@
 /*************************************************************loader********************************************************************/
 /**************************************************************************************************************************************/
 
-/* initialisation du loader qui prend toute la page et disparaît*/
+/* initialisation du loader qui prend 
+toute la page et disparaît*/
 
 .loader{
   position:fixed;
@@ -41,7 +42,8 @@
   }
 }
 
-/* animation du loader qui disparaît comme une slide*/
+/* animation du loader qui disparaît 
+comme une slide*/
 
 @keyframes disappear{
   from {
@@ -54,7 +56,8 @@
   }
 }
 
-/* animation du cercle coloré qui tourne sur lui-même*/
+/* animation du cercle coloré qui 
+tourne sur lui-même*/
 
 @keyframes turn{
   0%{

@@ -7,10 +7,13 @@ span.fa-stack{
 }
 
 /* sélection du premier coeur*/
-.fa-stack {
+.fa-stack{
   cursor: pointer;
-  font-size: 28px;
+  font-size: 30px;
   opacity: 1;
+  &:hover{
+    color: transparent;
+  }
 }
   
   /* sélection du second coeur*/
@@ -23,7 +26,7 @@ span.fa-stack{
       background-image: linear-gradient($secondary-color, $primary-color);
       background-clip: text;
       -webkit-background-clip: text;
-      animation: remplissage 500ms linear forwards;
+      animation: remplissage 1s linear forwards;
     }
   }
 

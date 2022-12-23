@@ -42,6 +42,7 @@ a {
 
 .fa-arrow-left {
   position: absolute;
+  top: 30px;
 }
 
 /**************************************************************************************************************************************/
@@ -184,7 +185,8 @@ span.fa-stack {
   animation-name: sliders;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
-  /*animation-fill-mode : backwards conserve les propriétés de l'élements avant l'execution de l'anim*/
+  /*animation-fill-mode : backwards conserve les 
+  propriétés de l'élements avant l'execution de l'anim*/
 }
 
 @keyframes sliders {

@@ -42,6 +42,7 @@ a {
 
 .fa-arrow-left {
   position: absolute;
+  top: 30px;
 }
 
 /**************************************************************************************************************************************/
@@ -213,8 +214,9 @@ span.fa-stack {
 /**************************************************************************************************************************************/
 /*************************************************************loader********************************************************************/
 /**************************************************************************************************************************************/
-/* initialisation du loader qui prend toute la page et disparaît*/
-.loader {
+/* initialisation du loader qui prend 
+toute la page et disparaît*/
+.loading {
   position: fixed;
   background-color: #FFFFFF;
   height: 100vh;
@@ -231,7 +233,7 @@ span.fa-stack {
   transform-origin: top;
   /* création du cercle qui tourne sur lui-même*/
 }
-.loader_cercle {
+.loading_cercle {
   border-top: 10px solid #008766;
   border-bottom: 10px solid #FF79DA;
   border-left: 10px solid #99E2D0;
@@ -249,7 +251,8 @@ span.fa-stack {
   animation: turn 1s linear infinite;
 }
 
-/* animation du loader qui disparaît comme une slide*/
+/* animation du loader qui disparaît 
+comme une slide*/
 @keyframes disappear {
   from {
     transform: translateY(0px);
@@ -260,7 +263,8 @@ span.fa-stack {
     transform: translateY(-100vh);
   }
 }
-/* animation du cercle coloré qui tourne sur lui-même*/
+/* animation du cercle coloré qui 
+tourne sur lui-même*/
 @keyframes turn {
   0% {
     transform: rotate(0deg);

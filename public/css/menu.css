@@ -152,16 +152,13 @@ span.fa-stack {
 /* sélection du premier coeur*/
 .fa-stack {
   cursor: pointer;
-  font-size: 30px;
+  font-size: 28px;
   opacity: 1;
-}
-.fa-stack:hover {
-  color: transparent;
 }
 
 /* sélection du second coeur*/
 .fa-stack :nth-child(2) {
-  font-size: 30px;
+  font-size: 28px;
   color: transparent;
   /* application de l'animation au hover*/
 }
